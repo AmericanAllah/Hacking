@@ -43,3 +43,13 @@ Content-Type: image/png
 <?php system($_REQUEST['cmd']); ?>
 ...
 
+
+Backend validation
+There are generally two common forms of validating a file extension on the back-end:
+
+Testing against a blacklist of types
+Testing against a whitelist of types
+
+You can use burpsuites sniper to brute force the file extension
+Example in request: filename="example$.php$"
+make sure to un-tick url encoding
